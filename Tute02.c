@@ -19,6 +19,18 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 #include <stdio.h>
 
 int main() {
-  
+  int amount, distance;
+	
+	printf("Enter vehicle distance : ");
+	scanf("%d",&distance);
+	
+	if(distance<30){
+		amount = 50*distance;
+	}
+	else{
+		amount=30*distance+((distance-30)*40);
+	}
+	
+	printf("Distance charge is : %d",amount);
   return 0;
 }
